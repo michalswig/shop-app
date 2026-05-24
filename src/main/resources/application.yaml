@@ -5,3 +5,25 @@ spring:
     open-in-view: false
 server:
   port: 8082
+
+#Task: Create Product Entity + ProductRepository
+#Problem biznesowy: E-commerce bez produktów to jak pizzeria bez pizzy. Zacznij od podstawy.
+#Wymagania:
+#
+#Stwórz encję Product z polami:
+#
+#  id (Long, @Id, @GeneratedValue)
+#  name (String, @Column)
+#  description (String, @Column, nullable)
+#  price (BigDecimal, @Column, important — NIGDY double dla pieniędzy!)
+#  quantity (Integer, stock)
+#  createdAt (LocalDateTime, @CreationTimestamp)
+#  updatedAt (LocalDateTime, @UpdateTimestamp)
+#
+#
+#  Stwórz ProductRepository extends JpaRepository<Product, Long>
+#  Dodaj application.properties z bazą H2
+#  Brak controllerów jeszcze — tylko entity + repo
+#
+#Kiedy zacząć: Zaraz, wklej kod tutaj.
+#Commit message: feat: add Product entity and ProductRepository
